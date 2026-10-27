@@ -1,0 +1,114 @@
+.column {
+  background-color: var(--column-bg);
+  border-radius: 8px;
+  width: 320px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  max-height: calc(100vh - 120px);
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 16px 8px;
+}
+
+.column-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.task-count {
+  background-color: var(--border-color);
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.column-task-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  min-height: 10px;
+}
+
+/* Custom scrollbar for task list */
+.column-task-list::-webkit-scrollbar {
+  width: 6px;
+}
+.column-task-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.column-task-list::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 10px;
+}
+
+.add-task-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 8px;
+  border-radius: 6px;
+  color: var(--text-color);
+  opacity: 0.7;
+  font-size: 0.95rem;
+  margin-top: 8px;
+  transition: background-color 0.2s, opacity 0.2s;
+  width: 100%;
+}
+
+.add-task-btn:hover {
+  background-color: var(--border-color);
+  opacity: 1;
+}
+
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.add-task-input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.add-task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-cancel {
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.btn-cancel:hover {
+  background-color: var(--border-color);
+  opacity: 1;
+}
